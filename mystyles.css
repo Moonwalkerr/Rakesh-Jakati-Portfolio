@@ -2,8 +2,7 @@
 /* We can goto google fonts or anywhere */
 /* Select a nice looking font, and fetch its name,weight and importing code */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
 /* css variables */
 /* root element for entire page */
 :root {
@@ -18,7 +17,8 @@
 body {
     margin: 0px;
     background-color: #E0E7FF;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Lato', sans-serif;
+
 }
 
 .container {
