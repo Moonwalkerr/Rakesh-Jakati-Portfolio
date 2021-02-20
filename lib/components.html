@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonwalker's Component Library</title>
+
+    <link rel="stylesheet" href="mystyles.css">
+
+</head>
+
+<body class="body">
+    <h1>
+        Welcome to Abhishek's First Component Library for Web Development !
+    </h1>
+    <p>
+        I am working on my first ever HTML-CSS Component Library. I hope you all are gonna like this one.
+        <!-- <br> -->
+        This Component Library will make my all other web development projects look good and consistent.
+    </p>
+    <p><strong>I will also make my portfolio on by using the components of this library soon !</strong> </p>
+    <hr>
+    <h2>
+        @typography
+        <!-- depicts how the typography will look like throughout the library -->
+    </h2>
+    <h1>
+        This is the Biggest Heading in the library.
+    </h1>
+    <h2>
+        This is the Second Biggest Heading in the library.
+    </h2>
+    <p>Now, letme show you the normal text. This is free flowing and will wrap at the end like a paragraph.</p>
+    <p>This paragraph will have a <strong>Bold Text</strong></p>
+    <small>This is relatively Smaller Text</small>
+    <hr>
+    <h2>@container</h2>
+    <!--  Now we want some containers to hold Data, have width wise visibility, like an empty space -->
+    <!-- Use meaningful tags wherever necessary -->
+    <!-- Containers have no meaning, so we can use div tag here -->
+    <h3>Fluid Container</h3>
+    <div class="container container-fluid">This is a Fluid Container and it will go till the end of the page</div>
+    <!-- We use div basically just for a place holder -->
+    <h3>Centered Container</h3>
+    <div class="container container-center">This is a Centered Container and it will go till the specified width</div>
+    <hr>
+    <h2>@links</h2>
+    <p><strong>
+            For Visiting the project, click below</strong></p>
+    <a class="link primary-link" href="  https://t.ly/MxBC
+       ">Click me</a>
+    <p><strong>
+            For Visiting the project, click below</strong></p>
+    <a class="link secondary-link" href="https://github.com/Moonwalkerr">Click Me</a>
+    <hr>
+    <h2>@list</h2>
+    <h3>Unordered List</h3>
+    <p>This List won't have bullets</p>
+    <ul class="list-non-bullet">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <!-- The Browser knows now, its a list  -->
+    </ul>
+
+    <h3>Unordered Inline List</h3>
+    <!--if we want our list to be in a row view -->
+    <!-- Browser can't make this happen by itself, we need CSS for this -->
+    <u1 class="list-non-bullet">
+        <li class="list-item-inline">Inline Item One</li>
+        <li class="list-item-inline">Inline Item Two</li>
+        <li class="list-item-inline">Inline Item Three</li>
+    </u1>
+
+    <h3>Reverse Ordered List</h3>
+    <!-- Ordered List -->
+    <!-- Has numbers -->
+    <!-- Reverse ordered list by revers nos -->
+    <!-- This is helpful at time of creating a project timeline from latest to first in reverse ordered way -->
+    <ol reversed>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>French Toast</li>
+    </ol>
+
+    <hr>
+    <h2>@nav</h2>
+
+    <nav class="navigation">
+        <div class="nav-brand">IamMoonwalker</div>
+        <!-- the brand name -->
+        <ul class="list-non-bullet nav-pills    ">
+            <li class="list-item-inline"></li>
+            <a class="navigation-link link-active" href="/">Home</a>
+            </li>
+            <li class="list-item-inline"></li>
+            <a class="navigation-link" href="/">My Projects</a>
+            </li>
+            <li class="list-item-inline"></li>
+            <a class="navigation-link" href="/">About</a>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+
+    <h2>@header</h2>
+    <!-- Header is used when we need to highlight something on top on website, about a product, which you should definitely buy,etc -->
+
+    <header class="hero">
+        <!-- important links for selecting themes and colors for our UI :-
+            https://tailwindcss.com/docs/customizing-colors
+            https://undraw.co/illustrations
+            undraw, unsplash  images are free to use, with no copyright issues
+            https://unsplash.com
+    -->
+
+        <img class="hero-img" src="images/header.svg" />
+        <h1 class="hero-heading">Abhishek Mishra is also now a <span class="in-heading-hero">Web Developer</span> </h1>
+    </header>
+    <hr>
+
+    <h2>@section</h2>
+    <!-- its again a tag, used for differentiating diff parts withing a theme/page-view -->
+    <section class="section section-white">
+        <!-- section can have heading, can have paragraph, article, anything -->
+
+        <div class="container-center">
+            <h3 class="heading-setcion">White Section</h3>
+
+            <!-- we can give any h3 name -->
+            <p>Web development is the work involved in developing a Web site for the Internet or an intranet. Web
+                development can range from developing a simple single static page of plain text to complex Web-based
+                Internet applications, electronic businesses, and social network services. </p>
+            <!-- expand to entire page -->
+
+        </div>
+    </section>
+
+
+    <section class="section section-off-white">
+        <div class="container-center">
+            <h3 class="heading-setcion">Off White Section</h3>
+            <p>WebFonts is a technology that enables people to use fonts on demand over the Web without requiring
+                installation in the operating system. W3C has experience in downloadable fonts through HTML, CSS2, and
+                SVG. Until recently, downloadable fonts have not been common on the Web due to the lack of an
+                interoperable font format. The WebFonts effort plans to address that through the creation of an
+                industry-supported, open font format for the Web (called "WOFF").</p>
+        </div>
+    </section>
+    <hr>
+    <h2>@footer</h2>
+    <footer class="footer"> <br>
+        <!-- in footer we must not use h1 h2 tags -->
+        <div class="footer-heading">Some small heading inside footer</div>
+        <ul>
+            <li class="footer-list-item-inline"><a class="footer-links link  " href="/">Social Media Link 1</a></li>
+            <li class="footer-list-item-inline"><a class="footer-links link  " href="/">Social Media link 2</a></li>
+            <li class="footer-list-item-inline"><a class="footer-links link  " href="/">Social Media Link 3</a></li>
+            <li class="footer-list-item-inline"><a class="footer-links link  " href="/">Some more references/routes</a>
+            </li>
+        </ul>
+        <br>
+    </footer>
+    <!-- 
+    <div style="height:30vh; ">
+     just for padding a lil -->
+    </div> --> -->
+</body>
+
+</html>
