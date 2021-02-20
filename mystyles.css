@@ -1,0 +1,197 @@
+/* First things first, we need to fix the typography */
+/* We can goto google fonts or anywhere */
+/* Select a nice looking font, and fetch its name,weight and importing code */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap');
+
+/* css variables */
+/* root element for entire page */
+:root {
+    --primary-color:
+        #4F46E5;
+    --secondary-color:
+        /* #DB2777; */
+        #3730A3;
+    --dark-gray: #6B7280;
+}
+
+body {
+    margin: 0px;
+    background-color: #E0E7FF;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    padding-left: lrem;
+    padding-right: lrem;
+    /* read css docs for these understandings */
+
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* .container-fluid{
+
+    is a normal container 
+} */
+
+
+/* Links */
+
+.link {
+    /* font-size: large; */
+    font-size: large;
+    box-sizing: content-box;
+    margin: 2rem;
+    text-decoration: none;
+    /* padding: 0.5rem, 1rem; */
+}
+
+.primary-link {
+
+
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    color: white;
+
+}
+
+.secondary-link {
+    margin: 2rem;
+    /* background-color: var(--secondary-color); */
+    border-radius: 0.5rem;
+    border: 1px solid var(--secondary-color);
+    color: #4F46E5;
+}
+
+hr {
+    margin: 2rem 0rem;
+
+    /* top and bottom 2, left and right 0 */
+}
+
+.list-non-bullet {
+    list-style: none;
+}
+
+/* Read about BEM convention namings for classes in CSS */
+
+
+.list-item-inline {
+    display: inline;
+    padding: 3rem 1rem;
+}
+
+
+
+
+.navigation {
+    border-bottom-left-radius: 1rem;
+    background-color: #4941b9;
+    color: #831843;
+    padding: 1rem 0.5rem;
+}
+
+.nav-pills {
+    text-align: center;
+}
+
+.nav-brand {
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+}
+
+/* inside a navigation list items */
+.navigation-link {
+    text-decoration: none;
+    font-size: medium;
+    color: #adbaca;
+}
+
+
+.link-active {
+    font-weight: bold;
+    color: #F5F3FF;
+}
+
+
+/* header */
+
+.hero {
+    padding: 0.5rem 0.2rem;
+}
+
+.hero .hero-img {
+    margin: auto;
+    display: block;
+    max-width: 800px;
+    padding: 0.4rem;
+}
+
+.hero-heading {
+    font-weight: bolder;
+    text-align: center;
+    color: var(--dark-gray);
+    /* color: red; */
+}
+
+.in-heading-hero {
+    color: var(--primary-color);
+}
+
+/* now we want headings inside section at center */
+.section h3 {
+    text-align: center;
+}
+
+.section-white {
+    background-color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+
+.section-off-white {
+    /* text-align: center; */
+    background-color: #EFF6FF;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+
+.heading-section {
+    font-weight: bold;
+    font-size: larger;
+}
+
+/* footers */
+
+
+.footer {
+    text-align: center;
+    background-color: #4941b9;
+    border-top-right-radius: 1rem;
+}
+
+.footer-heading {
+    text-align: center;
+    color: #DBEAFE;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.footer-links {
+    color: white;
+    /* color: #adbaca; */
+}
+
+.footer-list-item-inline {
+    display: inline;
+    padding: 2rem 2rem;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
